@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="background-overlay"></div>
     <header>
         <h1>Фіо</h1>
         <p>Світло є, але не ясне. Світло там, де біль нещасний.</p>
@@ -40,9 +41,19 @@
         </section>
     </main>
 
-    <!-- YouTube playlist background audio -->
-    <iframe width="0" height="0" src="https://www.youtube.com/embed/videoseries?list=PL-JZosJEhC84RrWhEK6wV1xdMY2hc1RJl&autoplay=1&loop=1&playlist=PL-JZosJEhC84RrWhEK6wV1xdMY2hc1RJl" 
-        title="YouTube playlist" frameborder="0" allow="autoplay" allowfullscreen style="position:absolute; left:-9999px;">
-    </iframe>
+    <footer>
+        <div class="music-controls">
+            <button onclick="prevSong()">⏮</button>
+            <button onclick="togglePlay()">⏯</button>
+            <button onclick="nextSong()">⏭</button>
+        </div>
+    </footer>
+
+    <audio id="music" autoplay loop>
+        <source src="https://docs.google.com/uc?export=download&id=1WqG4QBdYoSo3WojDCfMQUx1Tf4yk03HC" type="audio/mp3">
+        Ваш браузер не підтримує аудіо.
+    </audio>
+
+    <script src="script.js"></script>
 </body>
 </html>
